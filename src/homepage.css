@@ -3,7 +3,10 @@
 @import url('http://fonts.cdnfonts.com/css/apple-garamond');
 @import url("https://use.typekit.net/tal0bui.css");
 
-
+body{
+  margin: 0;
+  padding-top:130px;
+}
 .sfp-nav {
   font-family: 'Apple Garamond', sans-serif;
   position: fixed;
@@ -13,14 +16,42 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-
-
-flex-direction:column;
+  flex-direction:column;
   border-bottom: 1px solid #FFF;
   transition: all 0.6s ease;
   overflow: hidden;
   z-index: 8;
   background-color: #003552;
+}
+
+header {
+  display:flex;
+position: relative;
+  width: 100vw;
+  background: black;
+  overflow: hidden;
+}
+
+header img{
+  width:100%;
+  opacity: 0.4;
+}
+
+.hero-text{
+  position: absolute;
+    left: 50%;
+    top: 43%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Apple Garamond Light', sans-serif;
+    font-size: clamp(20px, 5.5vw, 80px);
+    width: 100%;
+
+}
+
+.hero-text h1{
+  text-align: center;
+    width: 100%;
 }
 
 .sfp-nav-container{
@@ -44,6 +75,8 @@ flex-direction:column;
     height:100px;
     
 }
+
+
 
 .sfp-logo img{
   max-width: 75%;
@@ -117,6 +150,45 @@ flex-direction:column;
   color:black;
 }
 
+
+/* hamburger menu */
+
+.hamburger {
+  display: block;  
+  width: 40px; /* less width = square hamburger */
+  height: 60px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* each line of menu */
+.line {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  transition: 0.5s;
+}
+
+.line:nth-child(1) { top: 12px; }
+.line:nth-child(2) { top: 24px; }
+.line:nth-child(3) { top: 36px; }
+
+/* rotate the top and bottom line, and remove the middle line */
+.hamburger.open .line:nth-child(1){
+  transform: translateY(12px) rotate(-45deg);
+}
+
+.hamburger.open  .line:nth-child(2){
+  opacity:0;
+}
+
+.hamburger.open .line:nth-child(3){
+  transform: translateY(-12px) rotate(45deg);
+}
+
+
+/* side scrolling bar */
 
 .bar {
 

@@ -18,7 +18,10 @@ function Header() {
               className={isActive ? "hamburger" : "hamburger open"}
               onClick={handleToggle}
             >
-              <div></div>
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+
             </div>
           </div>
         </div>

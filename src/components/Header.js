@@ -15,25 +15,42 @@ function Header() {
         <div className="sfp-menu-container">
           <div className="sfp-menu-element">
             <div
-              className={isActive ? "hamburger-menu" : "hamburger-menu open"}
+              className={isActive ? "hamburger" : "hamburger open"}
               onClick={handleToggle}
             >
-              <span></span>
-              <span></span>
-              <span></span>
+              <div></div>
             </div>
           </div>
         </div>
       </div>
       <div className={isActive ? "sub-menu" : "sub-menu open"}>
-        <div className="menu-item">About</div>
-        <div className="menu-item"> Contact Us</div>
-        <div className="menu-item"> Shop</div>
-        <div className="menu-item"> Home</div>
+        <div className="menu-item">
+          <a className="menu-link" href="#">
+            About
+          </a>
+        </div>
+        <div className="menu-item">
+          {" "}
+          <a className="menu-link" href="#">
+            Shop
+          </a>
+        </div>
+        <div className="menu-item">
+          {" "}
+          <a className="menu-link" href="#">
+            Stories
+          </a>
+        </div>
+        <div className="menu-item">
+          {" "}
+          <a className="menu-link" href="#">
+            Rentals
+          </a>
+        </div>
       </div>
       <div class="bar">
         <span class="bar_content">
-          You're amazing. Don't let anyone tell you otherwise.You're amazing.
+          You're amazing. Don't let anyone tell you otherwise. You're amazing.
           Don't let anyone tell you otherwise. You're amazing. Don't let anyone
           tell you otherwise.
         </span>

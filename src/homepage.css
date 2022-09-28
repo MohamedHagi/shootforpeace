@@ -6,7 +6,10 @@
 @font-face {
   font-family: 'apple_garamondregular';
   src: url("https://dvodr9ecx1wan.cloudfront.net/a6f12191d6abbba09d3ed0fd81b128bb.woff2") format('woff2'),
-       url("https://dvodr9ecx1wan.cloudfront.net/a6f12191d6abbba09d3ed0fd81b128bb.woff") format('woff');
+       url("https://dvodr9ecx1wan.cloudfront.net/a6f12191d6abbba09d3ed0fd81b128bb.woff") format('woff'),
+       url('https://dvodr9ecx1wan.cloudfront.net/a6f12191d6abbba09d3ed0fd81b128bb.eot') format('embedded-opentype'),
+       url('https://dvodr9ecx1wan.cloudfront.net/a6f12191d6abbba09d3ed0fd81b128bb.svg') format('svg'),
+       url("https://dvodr9ecx1wan.cloudfront.net/a6f12191d6abbba09d3ed0fd81b128bb.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
 

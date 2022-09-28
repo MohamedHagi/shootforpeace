@@ -1,14 +1,23 @@
 
 
-@import url('http://fonts.cdnfonts.com/css/apple-garamond');
+
 @import url("https://use.typekit.net/tal0bui.css");
+
+@font-face {
+  font-family: 'apple_garamondregular';
+  src: url("https://dvodr9ecx1wan.cloudfront.net/a6f12191d6abbba09d3ed0fd81b128bb.woff2") format('woff2'),
+       url("https://dvodr9ecx1wan.cloudfront.net/a6f12191d6abbba09d3ed0fd81b128bb.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
 
 body{
   margin: 0;
   padding-top:130px;
 }
 .sfp-nav {
-  font-family: 'Apple Garamond', sans-serif;
+  font-family: 'apple_garamondregular', sans-serif;
   position: fixed;
   top: 0;
   left: 0;
@@ -43,7 +52,7 @@ header img{
     top: 43%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-family: 'Apple Garamond Light', sans-serif;
+    font-family: 'apple_garamondregular', sans-serif;
     font-size: clamp(20px, 5.5vw, 80px);
     width: 100%;
 

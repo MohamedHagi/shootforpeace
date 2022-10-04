@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../images/sfp_logo.png";
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [isActive, setActive] = useState("false");
@@ -10,7 +11,9 @@ function Header() {
     <div className="sfp-nav">
       <div className="sfp-nav-container">
         <div className="sfp-logo">
-          <img src={logo} alt="sfp logo"></img>
+          <a href="/" className="sfp-logo-link">
+            <img src={logo} alt="sfp logo"></img>
+          </a>
         </div>
         <div className="sfp-menu-container">
           <div className="sfp-menu-element">
@@ -28,7 +31,7 @@ function Header() {
       </div>
       <div className={isActive ? "sub-menu" : "sub-menu open"}>
         <div className="menu-item">
-          <a className="menu-link" href="#">
+          <a href="/about" className="menu-link">
             About
           </a>
         </div>

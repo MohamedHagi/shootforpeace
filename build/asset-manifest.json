@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2e404bfc.css",
+    "main.js": "/static/js/main.316c1abb.js",
+    "static/js/787.adcc054f.chunk.js": "/static/js/787.adcc054f.chunk.js",
+    "static/media/sfp_logo.png": "/static/media/sfp_logo.d7ecd390d2ad08323fd9.png",
+    "index.html": "/index.html",
+    "main.2e404bfc.css.map": "/static/css/main.2e404bfc.css.map",
+    "main.316c1abb.js.map": "/static/js/main.316c1abb.js.map",
+    "787.adcc054f.chunk.js.map": "/static/js/787.adcc054f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e404bfc.css",
+    "static/js/main.316c1abb.js"
+  ]
+}

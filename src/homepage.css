@@ -83,6 +83,7 @@ header img {
 .hero-2 img {
   width: 90%;
   overflow: hidden;
+  border-right: 3px solid #fff;
 }
 
 .hero2-text {
@@ -236,6 +237,45 @@ header img {
   transform: translateY(-12px) rotate(45deg);
 }
 
+/* side-scroll animation for text */
+
+.m-scroll {
+  overflow: hidden;
+  height: 100%;
+  /* white-space: nowrap will keey the text from wrapping */
+  white-space: nowrap;
+  animation: scrollText 20s infinite linear;
+  /* infinte keyword to let animation run infinitely */
+  margin: 0;
+  font-size: 0;
+  display: inline-block;
+}
+
+span {
+  /* display: inline-block so all the span elements stay on the same line */
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  max-height: 35px;
+  background-color: #003552;
+  color: white;
+  font-family: orpheuspro, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 23px;
+}
+
+/* transformX from 0 - 25%, this will move the text horizontally  */
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(25%);
+  }
+}
+
 /* side scrolling bar */
 
 .bar {
@@ -252,23 +292,29 @@ header img {
 
   font-style: italic;
   font-size: 23px;
+  display: inline-block;
 }
 
 .bar_content {
-  display: block; /* Important to give the content a width */
-
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
   width: 100%;
-  transform: translateX(100%); /* Animation start out of the screen */
-
+  /* Animation start out of the screen */
+  transform: translateX(100%);
   /* Add the animation */
-  animation: move 30s linear infinite
-    /* infinite make reapeat the animation indefinitely */;
+  animation: move 1s linear infinite
+    /* infinite make repeat the animation indefinitely */;
+}
+.bar_content p {
+  margin: 0;
+  padding-right: 20px;
 }
 
 /* Create the animation */
 @keyframes move {
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
@@ -284,6 +330,7 @@ header img {
 }
 
 .newsletter {
+  border-top: 3px solid #fff;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -321,6 +368,129 @@ input:focus {
   outline: none;
 }
 
+.stories-container {
+  background-color: #1a321c;
+  display: flex;
+  flex-direction: column;
+}
+
+.stories-title-container {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #fcf7d3;
+}
+
+.stories-title {
+  color: #fcf7d3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(14px, 2.5vw, 20px);
+  text-align: left;
+  padding: 20px;
+  border-right: 2px solid beige;
+  width: 45%;
+}
+
+.story-container {
+  border-right: 2px solid beige;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid beige;
+}
+.stories-heading {
+  color: beige;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(14px, 2.5vw, 20px);
+  text-align: left;
+  width: 70%;
+  padding: 40px;
+}
+
+.story-cover {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border-right: 2px solid beige;
+}
+
+.story-title {
+  color: #fcf7d3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(14px, 2.5vw, 20px);
+  text-align: left;
+  padding: 20px;
+  border-right: 2px solid beige;
+  width: 50%;
+}
+
+.story-text {
+  color: beige;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(14px, 2.5vw, 20px);
+  text-align: left;
+  width: 70%;
+  padding: 40px;
+}
+
+.story-cover p {
+  color: beige;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(14px, 2.5vw, 20px);
+  text-align: left;
+  padding: 20px;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: row;
+
+  background-color: #654321;
+}
+
+.services-img {
+  width: 30%;
+}
+
+.services-img img {
+  width: 100%;
+}
+
+.services-text {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  background-color: #654321;
+  padding-bottom: 5%;
+  border: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.services-text h1 {
+  font-family: 'apple_garamondregular', sans-serif;
+  font-size: clamp(1rem, 3.5vw, 2rem);
+  padding: 18px;
+  padding-bottom: 0;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.services-text p {
+  font-family: orpheuspro, serif;
+  font-size: clamp(1rem, 2.4vw, 2.5rem);
+  color: #fff;
+}
+
+hr {
+  margin-left: 4%;
+  width: 60%;
+  height: 3px;
+  background: #fff;
+  border: none;
+  display: inline-block;
+  border-radius: 10px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
 @media only screen and (max-width: 767px) {
   .newsletter {
     flex-direction: column;
@@ -344,5 +514,21 @@ input:focus {
 
   .hero2-text {
     max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .services-container {
+    flex-direction: column-reverse;
+  }
+
+  .services-text {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #fff;
+  }
+
+  .services-img {
+    width: 100%;
   }
 }

@@ -21,9 +21,9 @@ function Header() {
               className={isActive ? "hamburger" : "hamburger open"}
               onClick={handleToggle}
             >
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
+              <span className="line"></span>
+              <span className="line"></span>
+              <span className="line"></span>
 
             </div>
           </div>
@@ -37,29 +37,42 @@ function Header() {
         </div>
         <div className="menu-item">
           {" "}
-          <a className="menu-link" href="#">
+          <a className="menu-link" href="https://shootforpeace.com/shop" target="_blank">
             Shop
           </a>
         </div>
         <div className="menu-item">
           {" "}
-          <a className="menu-link" href="#">
+          <a className="menu-link" href="/stories">
             Stories
           </a>
         </div>
         <div className="menu-item">
           {" "}
-          <a className="menu-link" href="#">
-            Rentals
+          <a className="menu-link" href="/services">
+            Services
           </a>
         </div>
       </div>
-      <div class="bar">
-        <span class="bar_content">
-          You're amazing. Don't let anyone tell you otherwise. You're amazing.
-          Don't let anyone tell you otherwise. You're amazing. Don't let anyone
-          tell you otherwise.
+      <div class="scroll">
+        <div class="m-scroll">
+
+          <span>
+            You're amazing. Don't let anyone tell you otherwise.
         </span>
+          <span>
+            You're amazing. Don't let anyone tell you otherwise.
+        </span>
+          <span>
+            You're amazing. Don't let anyone tell you otherwise.
+        </span>
+          <span>
+            You're amazing. Don't let anyone tell you otherwise.
+        </span>
+          <span>
+            You're amazing. Don't let anyone tell you otherwise.
+        </span>
+        </div>
       </div>
     </div>
   );

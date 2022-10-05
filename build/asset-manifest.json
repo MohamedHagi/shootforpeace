@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.2e404bfc.css",
-    "main.js": "/static/js/main.316c1abb.js",
+    "main.css": "/static/css/main.0f9dc02d.css",
+    "main.js": "/static/js/main.31c4812c.js",
     "static/js/787.adcc054f.chunk.js": "/static/js/787.adcc054f.chunk.js",
     "static/media/sfp_logo.png": "/static/media/sfp_logo.d7ecd390d2ad08323fd9.png",
     "index.html": "/index.html",
-    "main.2e404bfc.css.map": "/static/css/main.2e404bfc.css.map",
-    "main.316c1abb.js.map": "/static/js/main.316c1abb.js.map",
+    "main.0f9dc02d.css.map": "/static/css/main.0f9dc02d.css.map",
+    "main.31c4812c.js.map": "/static/js/main.31c4812c.js.map",
     "787.adcc054f.chunk.js.map": "/static/js/787.adcc054f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e404bfc.css",
-    "static/js/main.316c1abb.js"
+    "static/css/main.0f9dc02d.css",
+    "static/js/main.31c4812c.js"
   ]
 }

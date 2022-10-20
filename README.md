@@ -19,7 +19,11 @@ Shoot For Peace is a youth photography program in Toronto, this is the updated v
 
 ## Screenshots
 
-![Alt text](https://dvodr9ecx1wan.cloudfront.net/ShootForPeace1.png "Optional title")
+![ScreenShot 1](https://raw.githubusercontent.com/MohamedHagi/shootforpeace/master/public/ShootForPeace1.png)
+
+![ScreenShot 2](https://raw.githubusercontent.com/MohamedHagi/shootforpeace/master/public/ShootForPeace2.png)
+
+![ScreenShot 3](https://raw.githubusercontent.com/MohamedHagi/shootforpeace/master/public/ShootForPeace3.png)
 
 ## Technologies
 I used `React`, `Javascript`, and `SCSS/CSS`

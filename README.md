@@ -15,7 +15,7 @@ https://shootforpeace.netlify.com
 - [License](#license)
 
 ## About The App
-Shoot For Peace is a youth photography program in Toronto,
+Shoot For Peace is a youth photography program in Toronto, this is the updated version of their website. 
 
 ## Screenshots
 
@@ -36,9 +36,9 @@ This project is still in progress. It will updated the current www.shootforpeace
 
 ## Credits
 List of contriubutors:
-- [Mohamed Hagi](github.com/MohamedHagi)
+- [Mohamed Hagi](https://github.com/MohamedHagi)
 
 
 ## License
 
-MIT license @ [Mohamed Hagi](github.com/MohamedHagi)
+MIT license @ [Mohamed Hagi](https://github.com/MohamedHagi)

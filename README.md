@@ -1,5 +1,5 @@
-# Project Title
-Shoot For Peace Website
+# Shoot For Peace Website
+
 
 ## Demo link:
 https://shootforpeace.netlify.com
